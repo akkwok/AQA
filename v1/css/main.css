@@ -7308,7 +7308,7 @@ html:not(.js_mobile) #BMC-width-full .btnBlue:hover {
 #BMC-width-full .block-faq .list-faq>.list .list-ques {
     font-size: 1.33em;
     border-radius: 25px / 50%;
-    padding: 1em 50px 1em 30px;
+    padding: 1em 60px 1em 30px;
     background: linear-gradient(to bottom, #eaf2fb 0%, #f9fbfe 100%);
     position: relative;
     color: #022064;
