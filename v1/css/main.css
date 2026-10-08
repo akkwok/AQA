@@ -981,7 +981,7 @@ transition: all .5s;*/
 }
 #BMC-width-full #BMC-KV .maintitle h3{
     font-size: clamp(1.5em, 2vw, 30px);
-    color: #2e3a4a;
+    color: #000;
 }
 /* #BMC-width-full #BMC-KV .product-content {
     background-size: 100%;
@@ -2695,7 +2695,7 @@ transition: all .5s;*/
 #BMC-width-full #BMC-agents .block-productTab #PanelLayout #Front .T1 {
         max-width: 66px;
     width: 10%;
-    right: 72%;
+    right: 77%;
     bottom: 14%;
     text-align: center;
 }
@@ -2889,8 +2889,8 @@ transition: all .5s;*/
     }
 
     #BMC-width-full #BMC-agents .block-productTab #PanelLayout #Front .list-number span:nth-child(1) {
-                top: 62%;
-        left: 14%;
+                top: 55%;
+        left: 8%;
         z-index: 2;
     }
 
