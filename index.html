@@ -513,84 +513,86 @@
                         </div>
                     </div>
                     <div class="pod_area">
+                        <!-- 1. 將標題移到 role="table" 外層，結構完全乾淨合法 -->
+                        <h3 id="pod-spec-title" class="pod-spec-caption">ASUS AI POD - 576p GPUs</h3>
+
+                        <!-- 2. 表格本身透過 aria-labelledby 讀取上方的標題 -->
                         <div class="pod-spec-table" role="table" aria-labelledby="pod-spec-title">
-                            <!-- 表格大標題 -->
-                            <div id="pod-spec-title" class="pod-spec-caption" role="heading" aria-level="3">ASUS AI POD - 576p GPUs</div>
 
                             <div class="pod-spec-tbody" role="rowgroup">
 
-                              <!-- Row 1 -->
-                              <div class="pod-spec-row" role="row">
-                                <div class="pod-spec-group group-left" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Rack</div>
-                                  <div class="pod-spec-value" role="cell">48RU MGX Rack</div>
+                                <!-- Row 1 -->
+                                <div class="pod-spec-row" role="row">
+                                    <div class="pod-spec-group group-left" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Rack</div>
+                                        <div class="pod-spec-value" role="cell">48RU MGX Rack</div>
+                                    </div>
+                                    <div class="pod-spec-group group-right" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Switch (N/S)</div>
+                                        <div class="pod-spec-value" role="cell">NVIDIA BlueField-4 DPU</div>
+                                    </div>
                                 </div>
-                                <div class="pod-spec-group group-right" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Switch (N/S)</div>
-                                  <div class="pod-spec-value" role="cell">NVIDIA BlueField-4 DPU</div>
-                                </div>
-                              </div>
 
-                              <!-- Row 2 -->
-                              <div class="pod-spec-row" role="row">
-                                <div class="pod-spec-group group-left" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">CPU Support</div>
-                                  <div class="pod-spec-value" role="cell">18 x Intel Xeon6 6776P Processors per rack</div>
+                                <!-- Row 2 -->
+                                <div class="pod-spec-row" role="row">
+                                    <div class="pod-spec-group group-left" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">CPU Support</div>
+                                        <div class="pod-spec-value" role="cell">18 x Intel Xeon6 6776P Processors per rack</div>
+                                    </div>
+                                    <div class="pod-spec-group group-right" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Switch (E/W)</div>
+                                        <div class="pod-spec-value" role="cell">NVIDIA NVSwitch SN2201</div>
+                                    </div>
                                 </div>
-                                <div class="pod-spec-group group-right" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Switch (E/W)</div>
-                                  <div class="pod-spec-value" role="cell">NVIDIA NVSwitch SN2201</div>
-                                </div>
-                              </div>
 
-                              <!-- Row 3 -->
-                              <div class="pod-spec-row" role="row">
-                                <div class="pod-spec-group group-left" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">GPU Support</div>
-                                  <div class="pod-spec-value" role="cell">72 x GPUs ( = 9x NVidia Rubin NVL8) per rack</div>
+                                <!-- Row 3 -->
+                                <div class="pod-spec-row" role="row">
+                                    <div class="pod-spec-group group-left" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">GPU Support</div>
+                                        <div class="pod-spec-value" role="cell">72 x GPUs ( = 9x NVidia Rubin NVL8) per rack</div>
+                                    </div>
+                                    <div class="pod-spec-group group-right" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Server</div>
+                                        <div class="pod-spec-value" role="cell">72 x ASUS XA NR1I-E12L(R) AI servers</div>
+                                    </div>
                                 </div>
-                                <div class="pod-spec-group group-right" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Server</div>
-                                  <div class="pod-spec-value" role="cell">72 x ASUS XA NR1I-E12L(R) AI servers</div>
-                                </div>
-                              </div>
 
-                              <!-- Row 4 -->
-                              <div class="pod-spec-row" role="row">
-                                <div class="pod-spec-group group-left" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Compute Tray</div>
-                                  <div class="pod-spec-value" role="cell">9 x XA NR1I-E12L(R) Compute Trays per rack</div>
+                                <!-- Row 4 -->
+                                <div class="pod-spec-row" role="row">
+                                    <div class="pod-spec-group group-left" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Compute Tray</div>
+                                        <div class="pod-spec-value" role="cell">9 x XA NR1I-E12L(R) Compute Trays per rack</div>
+                                    </div>
+                                    <div class="pod-spec-group group-right" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Storage</div>
+                                        <div class="pod-spec-value" role="cell">Flexible validated solutions with ASUS storage servers</div>
+                                    </div>
                                 </div>
-                                <div class="pod-spec-group group-right" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Storage</div>
-                                  <div class="pod-spec-value" role="cell">Flexible validated solutions with ASUS storage servers</div>
-                                </div>
-                              </div>
 
-                              <!-- Row 5 -->
-                              <div class="pod-spec-row" role="row">
-                                <div class="pod-spec-group group-left" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">Form Factor</div>
-                                  <div class="pod-spec-value" role="cell">Rack-Scale Systems</div>
+                                <!-- Row 5 -->
+                                <div class="pod-spec-row" role="row">
+                                    <div class="pod-spec-group group-left" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">Form Factor</div>
+                                        <div class="pod-spec-value" role="cell">Rack-Scale Systems</div>
+                                    </div>
+                                    <div class="pod-spec-group group-right" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">MGMT</div>
+                                        <div class="pod-spec-value" role="cell">Flexible validated solutions with ASUS management servers</div>
+                                    </div>
                                 </div>
-                                <div class="pod-spec-group group-right" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">MGMT</div>
-                                  <div class="pod-spec-value" role="cell">Flexible validated solutions with ASUS management servers</div>
-                                </div>
-                              </div>
 
-                              <!-- Row 6 -->
-                              <div class="pod-spec-row" role="row">
-                                <div class="pod-spec-group group-left" role="presentation">
-                                  <div class="pod-spec-label" role="rowheader">1 SU</div>
-                                  <div class="pod-spec-value" role="cell">8 Rack / 72 Compute Nodes</div>
+                                <!-- Row 6 -->
+                                <div class="pod-spec-row" role="row">
+                                    <div class="pod-spec-group group-left" role="presentation">
+                                        <div class="pod-spec-label" role="rowheader">1 SU</div>
+                                        <div class="pod-spec-value" role="cell">8 Rack / 72 Compute Nodes</div>
+                                    </div>
+                                    <!-- 視覺空欄維持 aria-hidden="true" 避免報讀雜訊 -->
+                                    <div class="pod-spec-group group-right" aria-hidden="true">
+                                        <div class="pod-spec-label pod-spec-empty"></div>
+                                        <div class="pod-spec-value"></div>
+                                    </div>
                                 </div>
-                                <!-- 右側無規格，保留空欄結構以對齊網格，aria-hidden 避免輔助工具報讀 -->
-                                <div class="pod-spec-group group-right" aria-hidden="true">
-                                  <div class="pod-spec-label pod-spec-empty"></div>
-                                  <div class="pod-spec-value"></div>
-                                </div>
-                              </div>
 
                             </div>
                         </div>
